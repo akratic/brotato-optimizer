@@ -1,0 +1,260 @@
+Weapon,Picture,Weapon Type,Attack Type,Base Dmg,Cooldown Stat,Base Range,Recoil Duration,Base Crit Chance,Crit Multiplier,Amount of Projectiles,Bounces,Bounce Damage Falloff,Amount of Pierces,Base Pierce Damage Falloff,Extra Hits on Crit,Reload every x Shots,Reload Multiplier,Base Burn Damage,Burn Ticks,Base Spawn Dmg,Spawned Projectiles,Spawn Base Bounces,Spawn Base Bounce Falloff,Spawn Base Piercing,Spawn Base Piercing Falloff,Spawn Crit Mult,Spawn Base Crit Chance,Spawn Scaling,Spawn Stat,1 Flat Scaling,2 Flat Scaling,3 Flat Scaling,Special Stat Name,Prim Stat,2 Scaling Stat,3 Scaling Stat,Projectile Speed,Knock- back,Accuracy,Projectile Spread,Base Price,Explosion Chance,Explosion Size,Hitbox X,Hitbox Y,Weapon Note
+Cacti Club 1,,Melee,Swing,15,63,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,1,3,0,50%,0,50%,2,3%,60.00%,1,80.00%,,,Special Scaling,0,0,,Melee,8,1,0,20,0%,0,88,32,"Spines spawn per enemy hit, spines can life steal, apply burn and slow with sausage/ugly tooth"
+Cacti Club 2,,Melee,Swing,20,58,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,2,4,0,50%,0,50%,2,3%,70.00%,1,85.00%,,,Special Scaling,0,0,,Melee,8,1,0,39,0%,0,88,32,"Spines spawn per enemy hit, spines can life steal, apply burn and slow with sausage/ugly tooth"
+Cacti Club 3,,Melee,Swing,30,54,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,3,5,0,50%,0,50%,2,3%,80.00%,1,90.00%,,,Special Scaling,0,0,,Melee,8,1,0,74,0%,0,88,32,"Spines spawn per enemy hit, spines can life steal, apply burn and slow with sausage/ugly tooth"
+Cacti Club 4,,Melee,Swing,60,45,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,4,6,0,50%,0,50%,2,3%,100.00%,1,100.00%,,,Special Scaling,0,0,,Melee,8,1,0,149,0%,0,88,32,"Spines spawn per enemy hit, spines can life steal, apply burn and slow with sausage/ugly tooth"
+Chain Gun 4,,Ranged,Projectile,2,2,500,0.02,3.00%,1.5,3,0,50.00%,1,0.5,0,100,60,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,100.00%,,Special Scaling,1,0,,3000,5,0.8,0.3,270,0%,0,Ranged,Ranged,
+Chopper 1,,Melee,Swing,6,27,135,0.1,10.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,15.00%,,Special Scaling,0,0,,Melee,2,1,0,15,0%,0,72,16,
+Chopper 2,,Melee,Swing,12,25,150,0.1,15.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,20.00%,,Special Scaling,0,0,,Melee,2,1,0,31,0%,0,72,16,
+Chopper 3,,Melee,Swing,18,23,165,0.1,20.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,25.00%,,Special Scaling,0,0,,Melee,2,1,0,61,0%,0,72,16,
+Chopper 4,,Melee,Swing,30,18,180,0.1,25.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,30.00%,,Special Scaling,0,0,,Melee,2,1,0,122,0%,0,72,16,
+Circular Saw 2,,Melee,Swing,10,8,175,0.1,5.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,0,1,0,46,0%,0,56,24.5,
+Circular Saw 3,,Melee,Swing,15,5,175,0.1,10.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,0,1,0,86,0%,0,56,24.5,
+Circular Saw 4,,Melee,Swing,25,2,175,0.1,20.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,0,1,0,173,0%,0,56,24.5,
+Claw 1,,Melee,Thrust,5,13,150,0.1,10.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,15.00%,,Special Scaling,0,5,,Melee,2,1,0,15,0%,0,60,20,
+Claw 2,,Melee,Thrust,10,11,150,0.1,15.00%,2.15,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,20.00%,,Special Scaling,0,5,,Melee,2,1,0,28,0%,0,60,20,
+Claw 3,,Melee,Thrust,15,8,150,0.1,20.00%,2.3,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,25.00%,,Special Scaling,0,5,,Melee,2,1,0,55,0%,0,60,20,
+Claw 4,,Melee,Thrust,25,3,150,0.1,25.00%,2.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,30.00%,,Special Scaling,0,5,,Melee,2,1,0,110,0%,0,60,20,
+Crossbow 1,,Ranged,Projectile,10,50,350,0.15,30.00%,1.5,1,0,50.00%,0,0,1,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,10.00%,,Special Scaling,1,0,,3000,8,1,0,16,0%,0,Ranged,Ranged,"Powerful weapon, but it struggles to get going. Stack Range instead of Ranged Damage. Crit is important. %dmg and Attack Speed are important as usual."
+Crossbow 2,,Ranged,Projectile,12,50,350,0.15,35.00%,1.75,1,0,50.00%,0,0,2,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,10.00%,,Special Scaling,1,0,,3000,8,1,0,34,0%,0,Ranged,Ranged,"Powerful weapon, but it struggles to get going. Stack Range instead of Ranged Damage. Crit is important. %dmg and Attack Speed are important as usual."
+Crossbow 3,,Ranged,Projectile,15,50,350,0.15,40.00%,2,1,0,50.00%,0,0,3,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,10.00%,,Special Scaling,1,0,,3000,8,1,0,62,0%,0,Ranged,Ranged,"Powerful weapon, but it struggles to get going. Stack Range instead of Ranged Damage. Crit is important. %dmg and Attack Speed are important as usual."
+Crossbow 4,,Ranged,Projectile,18,50,350,0.15,45.00%,2.25,1,0,50.00%,0,0,4,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,10.00%,,Special Scaling,1,0,,3000,8,1,0,132,0%,0,Ranged,Ranged,"Powerful weapon, but it struggles to get going. Stack Range instead of Ranged Damage. Crit is important. %dmg and Attack Speed are important as usual."
+DEX-troyer 4,,Melee,Thrust,100,30,400,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,30,1,4,0%,0,50%,2,3%,100%,0,100%,100%,,Special Scaling,0,0,,Melee / 3000,10,1,0,315,50%,1.25,147,24.5,
+Double Barrel Shotgun 1,,Ranged,Projectile,3,70,350,0.1,3.00%,2,4,0,50.00%,2,0.3,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,1,0,,3000,8,0.9,0.5,20,0%,0,Ranged,Ranged,
+Double Barrel Shotgun 2,,Ranged,Projectile,6,65,350,0.1,3.00%,2,4,0,50.00%,2,0.3,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,85.00%,,,Special Scaling,1,0,,3000,8,0.95,0.5,39,0%,0,Ranged,Ranged,
+Double Barrel Shotgun 3,,Ranged,Projectile,9,60,350,0.1,3.00%,2,4,0,50.00%,2,0.3,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,90.00%,,,Special Scaling,1,0,,3000,8,1,0.5,74,0%,0,Ranged,Ranged,
+Double Barrel Shotgun 4,,Ranged,Projectile,9,60,350,0.1,3.00%,2,6,0,50.00%,3,0.3,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,8,1,0.5,149,0%,0,Ranged,Ranged,
+Drill 4,,Melee,Thrust,10,2,100,0.01,50.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,100.00%,,Special Scaling,0,0,,Melee,5,1,0,250,0%,0,80.5,24,"The Attack Speed bonus increases your actual attack speed stat, affecting all weapons. Watch out for the low base range."
+Excalibur 4,,Melee,Swing,200,3,200,0.1,10.00%,2.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,200.00%,200.00%,,Special Scaling,0,0,,Melee,5,1,0,230,0%,0,112,32,
+Fireball 2,,Ranged,Projectile,5,55,400,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,3,5,0,0,0,50%,0,50%,2,3%,0.00%,0,25.00%,,,Special Scaling,0,0,,1500,0,0.9,0,36,100%,1,Ranged,Ranged,Applies burn to each enemy hit by the explosion.
+Fireball 3,,Ranged,Projectile,10,50,450,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,4,6,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,1500,0,0.95,0,66,100%,1,Ranged,Ranged,Applies burn to each enemy hit by the explosion.
+Fireball 4,,Ranged,Projectile,20,40,500,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,5,8,0,0,0,50%,0,50%,2,3%,0.00%,0,75.00%,,,Special Scaling,0,0,,1500,0,1,0,140,100%,1,Ranged,Ranged,Applies burn to each enemy hit by the explosion.
+Fist 1,,Melee,Thrust,8,13,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,10,0%,0,48,20,
+Fist 2,,Melee,Thrust,16,10,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,22,0%,0,48,20,
+Fist 3,,Melee,Thrust,32,8,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,45,0%,0,48,20,
+Fist 4,,Melee,Thrust,64,2,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,91,0%,0,48,20,
+Flamethrower 2,,Ranged,Projectile,1,5,250,0.02,0.00%,2,1,0,50.00%,0,1,0,0,0,3,5,0,0,0,50%,0,50%,2,3%,0.00%,0,1.00%,,,Special Scaling,0,0,,"800, Scales with range",0,0.6,0,56,0%,0,Ranged,Ranged,"Special Projectile - the projectile speed scales with your range, giving it a timed life. Doesn't function well with bounce."
+Flamethrower 3,,Ranged,Projectile,1,5,300,0.02,0.00%,2,1,0,50.00%,0,1,0,0,0,4,6,0,0,0,50%,0,50%,2,3%,0.00%,0,1.00%,,,Special Scaling,0,0,,"800, Scales with range",0,0.6,0,103,0%,0,Ranged,Ranged,"Special Projectile - the projectile speed scales with your range, giving it a timed life. Doesn't function well with bounce."
+Flamethrower 4,,Ranged,Projectile,1,3,400,0.02,0.00%,2,1,0,50.00%,0,1,0,0,0,6,8,0,0,0,50%,0,50%,2,3%,0.00%,0,1.00%,,,Special Scaling,0,0,,"800, Scales with range",0,0.6,0,207,0%,0,Ranged,Ranged,"Special Projectile - the projectile speed scales with your range, giving it a timed life. Doesn't function well with bounce."
+Flaming Brass Knuckles 2,,Melee,Thrust,20,10,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,10,5,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,46,0%,0,64,24,"Note the bigger hitbox compared to fist and powerfist. The weapon itself doesn't scale with elemental, only the burn does. It is the only elemental weapon to do this. "
+Flaming Brass Knuckles 3,,Melee,Thrust,40,8,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,15,6,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,86,0%,0,64,24,"Note the bigger hitbox compared to fist and powerfist. The weapon itself doesn't scale with elemental, only the burn does. It is the only elemental weapon to do this. "
+Flaming Brass Knuckles 4,,Melee,Thrust,80,2,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,18,7,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,173,0%,0,64,24,"Note the bigger hitbox compared to fist and powerfist. The weapon itself doesn't scale with elemental, only the burn does. It is the only elemental weapon to do this. "
+Gatling Laser 4,,Ranged,Projectile,10,2,500,0.02,10.00%,3,1,0,50.00%,3,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,5,0.75,0,290,0%,0,Ranged,Ranged,
+Ghost Axe 1,,Melee,Swing,12,67,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,20,0%,0,88,32,
+Ghost Axe 2,,Melee,Swing,18,63,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,39,0%,0,88,32,
+Ghost Axe 3,,Melee,Swing,24,57,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,74,0%,0,88,32,
+Ghost Axe 4,,Melee,Swing,40,54,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,149,0%,0,88,32,
+Ghost Flint 1,,Melee,Thrust,6,40,170,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,12,0%,0,72,16,
+Ghost Flint 2,,Melee,Thrust,9,36,180,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,26,0%,0,72,16,
+Ghost Flint 3,,Melee,Thrust,12,31,190,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,52,0%,0,72,16,
+Ghost Flint 4,,Melee,Thrust,20,27,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,105,0%,0,72,16,
+Ghost Scepter 1,,Ranged,Projectile,10,47,300,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,2,1,0,15,0%,0,Ranged,Ranged,
+Ghost Scepter 2,,Ranged,Projectile,15,44,350,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,2,1,0,31,0%,0,Ranged,Ranged,
+Ghost Scepter 3,,Ranged,Projectile,20,41,400,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,2,1,0,61,0%,0,Ranged,Ranged,
+Ghost Scepter 4,,Ranged,Projectile,30,38,450,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,2,1,0,122,0%,0,Ranged,Ranged,
+Hammer 2,,Melee,Swing,40,63,175,0.1,3.00%,1.75,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,150.00%,,,Special Scaling,0,0,,Melee,30,1,0,51,0%,0,80,32, Has 10% Knockback Piercing. Gives +2 Knockback
+Hammer 3,,Melee,Swing,75,58,175,0.1,3.00%,1.75,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,175.00%,,,Special Scaling,0,0,,Melee,40,1,0,95,0%,0,80,32, Has 15% Knockback Piercing. Gives +4 Knockback
+Hammer 4,,Melee,Swing,120,54,175,0.1,3.00%,1.75,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,200.00%,,,Special Scaling,0,0,,Melee,50,1,0,190,0%,0,80,32, Has 20% Knockback Piercing. Gives +6 Knockback
+Hand 1,,Melee,Thrust,1,27,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,30,1,0,10,0%,0,48,24,Gives +3 Harvesting
+Hand 2,,Melee,Thrust,1,22,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,30,1,0,22,0%,0,48,24,Gives +6 Harvesting
+Hand 3,,Melee,Thrust,1,18,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,30,1,0,45,0%,0,48,24,Gives +12 Harvesting
+Hand 4,,Melee,Thrust,1,9,150,0.1,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,30,1,0,91,0%,0,48,24,Gives +25 Harvesting
+Hatchet 1,,Melee,Swing,7,9,125,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,15.00%,,Special Scaling,0,5,,Melee,2,1,0,10,0%,0,74,28,
+Hatchet 2,,Melee,Swing,11,8,125,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,15.00%,,Special Scaling,0,5,,Melee,2,1,0,22,0%,0,74,28,
+Hatchet 3,,Melee,Swing,22,7,125,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,15.00%,,Special Scaling,0,5,,Melee,2,1,0,45,0%,0,74,28,
+Hatchet 4,,Melee,Swing,45,6,125,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,15.00%,,Special Scaling,0,5,,Melee,2,1,0,91,0%,0,74,28,
+Jousting Lance 1,,Melee,Thrust,20,55,250,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,30.00%,,Special Scaling,0,0,,Melee,0,1,0,20,0%,0,140,16,
+Jousting Lance 2,,Melee,Thrust,25,50,250,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,35.00%,,Special Scaling,0,0,,Melee,0,1,0,36,0%,0,140,16,
+Jousting Lance 3,,Melee,Thrust,30,45,250,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,40.00%,,Special Scaling,0,0,,Melee,0,1,0,72,0%,0,140,16,
+Jousting Lance 4,,Melee,Thrust,50,40,250,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,50.00%,,Special Scaling,0,0,,Melee,0,1,0,132,0%,0,140,16,
+Knife 1,,Melee,Thrust,9,27,150,0.1,20.00%,2.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,10,0%,0,72,16,
+Knife 2,,Melee,Thrust,13,22,150,0.1,30.00%,3,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,22,0%,0,72,16,
+Knife 3,,Melee,Thrust,18,18,150,0.1,40.00%,3.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,45,0%,0,72,16,
+Knife 4,,Melee,Thrust,25,13,150,0.1,50.00%,4,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,91,0%,0,72,16,
+Icicle 1,,Ranged,Projectile,10,50,400,0.1,5%,2,1,0,50.00%,1,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,2000,5,0.85,0,15,0%,0,Ranged,Ranged,
+Icicle 2,,Ranged,Projectile,20,45,400,0.1,10%,2,1,0,50.00%,1,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,2000,5,0.9,0,36,0%,0,Ranged,Ranged,
+Icicle 3,,Ranged,Projectile,30,40,400,0.1,15.00%,2.5,1,0,50.00%,1,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,2000,5,0.9,0,66,0%,0,Ranged,Ranged,
+Icicle 4,,Ranged,Projectile,40,30,400,0.1,20.00%,3,1,0,50.00%,1,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,2000,5,1,0,140,0%,0,Ranged,Ranged,
+Laser Gun 1,,Ranged,Projectile,40,95,500,0.2,3.00%,2,1,0,50.00%,1,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,400.00%,,,Special Scaling,1,0,,3000,0,1,0,15,0%,0,Ranged,Ranged,
+Laser Gun 2,,Ranged,Projectile,55,90,500,0.2,3.00%,2,1,0,50.00%,1,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,450.00%,,,Special Scaling,1,0,,3000,0,1,0,31,0%,0,Ranged,Ranged,
+Laser Gun 3,,Ranged,Projectile,70,85,500,0.2,3.00%,2,1,0,50.00%,1,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,500.00%,,,Special Scaling,1,0,,3000,0,1,0,61,0%,0,Ranged,Ranged,
+Laser Gun 4,,Ranged,Projectile,100,75,500,0.2,3.00%,2,1,0,50.00%,1,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,600.00%,,,Special Scaling,1,0,,3000,0,1,0,122,0%,0,Ranged,Ranged,
+Lightning Shiv 1,,Melee,Thrust,3,27,150,0.1,4.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,5,1,0,0%,0,50%,2,4%,80.00%,0,80.00%,,,Special Scaling,0,0,,Melee / 3000,0,1,0,18,0%,0,68,16,"The Lightning bounces 0/1/2/3 times, the ingame tooltip lies. The spawned projectiles can crit, life steal, and even inflict burn if you have scared sausage."
+Lightning Shiv 2,,Melee,Thrust,6,22,150,0.1,6.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,8,1,1,0%,0,50%,2,6%,80.00%,0,80.00%,,,Special Scaling,0,0,,Melee / 3000,0,1,0,36,0%,0,68,16,"The Lightning bounces 0/1/2/3 times, the ingame tooltip lies. The spawned projectiles can crit, life steal, and even inflict burn if you have scared sausage."
+Lightning Shiv 3,,Melee,Thrust,9,18,150,0.1,8.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,12,1,2,0%,0,50%,2,8%,80.00%,0,80.00%,,,Special Scaling,0,0,,Melee / 3000,0,1,0,66,0%,0,68,16,"The Lightning bounces 0/1/2/3 times, the ingame tooltip lies. The spawned projectiles can crit, life steal, and even inflict burn if you have scared sausage."
+Lightning Shiv 4,,Melee,Thrust,15,13,150,0.1,10.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,15,1,3,0%,0,50%,2,10%,80.00%,0,80.00%,,,Special Scaling,0,0,,Melee / 3000,0,1,0,142,0%,0,68,16,"The Lightning bounces 0/1/2/3 times, the ingame tooltip lies. The spawned projectiles can crit, life steal, and even inflict burn if you have scared sausage."
+Medical Gun 1,,Ranged,Projectile,10,35,400,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,2000,0,0.9,0,15,0%,0,Ranged,Ranged,Has 50% Innate Life Steal
+Medical Gun 2,,Ranged,Projectile,15,30,400,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,2000,0,0.9,0,31,0%,0,Ranged,Ranged,Has 55% Innate Life Steal
+Medical Gun 3,,Ranged,Projectile,20,25,400,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,2000,0,0.9,0,61,0%,0,Ranged,Ranged,Has 60% Innate Life Steal
+Medical Gun 4,,Ranged,Projectile,30,17,400,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,2000,0,1,0,122,0%,0,Ranged,Ranged,Has 65% Innate Life Steal
+Minigun 3,,Ranged,Projectile,2,3,400,0.02,1.00%,1.75,1,0,50.00%,1,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,1,0,,3000,3,0.85,0,127,0%,0,Ranged,Ranged,
+Minigun 4,,Ranged,Projectile,5,3,450,0.02,3.00%,2,1,0,50.00%,2,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,75.00%,,,Special Scaling,1,0,,3000,3,1,0,255,0%,0,Ranged,Ranged,
+Nuclear Launcher 3,,Ranged,Projectile,60,110,800,0.142,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,100.00%,,Special Scaling,1,0,,3000,15,1,0,144,100%,2,Ranged,Ranged,
+Nuclear Launcher 4,,Ranged,Projectile,120,110,800,0.142,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,100.00%,,Special Scaling,1,0,,3000,15,1,0,289,100%,2.25,Ranged,Ranged,
+Obliterator 3,,Ranged,Projectile,250,170,800,0.2,3.00%,2,1,0,50.00%,99,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,1000.00%,,,Special Scaling,1,0,,2000,0,1,0,127,0%,0,Ranged,Ranged,
+Obliterator 4,,Ranged,Projectile,400,170,1000,0.2,3.00%,2,1,0,50.00%,99,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,1500.00%,,,Special Scaling,1,0,,2000,0,1,0,255,0%,0,Ranged,Ranged,
+Particle Accelerator 3,,Ranged,Projectile,60,100,800,0.142,3.00%,2,1,-999999,50.00%,99,0,0,0,0,8,8,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,100.00%,,Special Scaling,0,0,,500,0,1,0,144,0%,0,Ranged,Ranged,This weapon cannot Bounce.
+Particle Accelerator 4,,Ranged,Projectile,120,80,800,0.142,3.00%,2,1,-999999,50.00%,99,0,0,0,0,10,10,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,100.00%,,Special Scaling,0,0,,500,0,1,0,289,0%,0,Ranged,Ranged,This weapon cannot Bounce.
+Pistol 1,,Ranged,Projectile,12,60,400,0.1,10.00%,2,1,0,50.00%,1,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,15,0.9,0,10,0%,0,Ranged,Ranged,
+Pistol 2,,Ranged,Projectile,20,55,400,0.1,15.00%,2,1,0,50.00%,1,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,15,0.9,0,22,0%,0,Ranged,Ranged,
+Pistol 3,,Ranged,Projectile,30,50,400,0.1,20.00%,2,1,0,50.00%,1,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,15,0.9,0,45,0%,0,Ranged,Ranged,
+Pistol 4,,Ranged,Projectile,50,40,400,0.1,25.00%,2,1,0,50.00%,1,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,15,1,0,91,0%,0,Ranged,Ranged,
+Plank 1,,Melee,Swing,10,40,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,60.00%,60.00%,60.00%,Special Scaling,0,0,0,Melee,5,1,0,15,25%,75%,72,16,
+Plank 2,,Melee,Swing,15,35,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,70.00%,70.00%,70.00%,Special Scaling,0,0,0,Melee,5,1,0,31,30%,75%,72,16,
+Plank 3,,Melee,Swing,20,30,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,80.00%,80.00%,Special Scaling,0,0,0,Melee,5,1,0,61,40%,75%,72,16,
+Plank 4,,Melee,Swing,30,25,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,90.00%,90.00%,90.00%,Special Scaling,0,0,0,Melee,5,1,0,122,50%,75%,72,16,
+Plasma Sledgehammer 3,,Melee,Swing,80,58,175,0.1,3.00%,1.75,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,150.00%,150.00%,,Special Scaling,0,0,,Melee,30,1,0,136,25%,100%,89,32,
+Plasma Sledgehammer 4,,Melee,Swing,120,54,175,0.1,3.00%,1.75,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,200.00%,200.00%,,Special Scaling,0,0,,Melee,30,1,0,272,50%,125%,89,32,
+Potato Thrower 2,,Ranged,Projectile,3,15,500,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,40.00%,20.00%,,Special Scaling,1,0,,2000,20,0.9,0,36,0%,0,Ranged,Ranged,
+Potato Thrower 3,,Ranged,Projectile,5,10,500,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,40.00%,20.00%,,Special Scaling,1,0,,2000,25,0.9,0,69,0%,0,Ranged,Ranged,
+Potato Thrower 4,,Ranged,Projectile,10,5,500,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,40.00%,20.00%,,Special Scaling,1,0,,2000,30,0.9,0,139,0%,0,Ranged,Ranged,
+Power fist 3,,Melee,Thrust,40,8,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,110,25%,100%,48,20,
+Power fist 4,,Melee,Thrust,80,2,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,15,1,0,221,50%,125%,48,20,
+Pruner 1,,Melee,Thrust,10,35,150,0.1,3.00%,1.25,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,2,1,0,15,0%,0,72,16,
+Pruner 2,,Melee,Thrust,15,30,150,0.1,6.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,65.00%,,,Special Scaling,0,0,,Melee,2,1,0,28,0%,0,72,16,
+Pruner 3,,Melee,Thrust,20,25,150,0.1,9.00%,1.75,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,52,0%,0,72,16,
+Pruner 4,,Melee,Thrust,25,20,150,0.1,12.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,2,1,0,95,0%,0,72,16,
+Quarterstaff 1,,Melee,Swing/Thrust,10,50,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,75.00%,,Level,0,0,,Melee,0,1,0,15,0%,0,92,20.5,
+Quarterstaff 2,,Melee,Swing/Thrust,15,40,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,65.00%,85.00%,,Level,0,0,,Melee,0,1,0,31,0%,0,92,20.5,
+Quarterstaff 3,,Melee,Swing/Thrust,20,30,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,85.00%,100.00%,,Level,0,0,,Melee,0,1,0,61,0%,0,92,20.5,
+Quarterstaff 4,,Melee,Swing/Thrust,30,20,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,125.00%,,Level,0,0,,Melee,0,1,0,122,0%,0,92,20.5,
+Revolver 1,,Ranged,Projectile,15,14,450,0.1,3.00%,2,1,0,50.00%,0,0.5,0,6,8,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,3000,15,0.9,0,20,0%,0,Ranged,Ranged,
+Revolver 2,,Ranged,Projectile,20,13,450,0.1,3.00%,2,1,0,50.00%,0,0.5,0,6,8,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,130.00%,,,Special Scaling,1,0,,3000,15,0.9,0,34,0%,0,Ranged,Ranged,
+Revolver 3,,Ranged,Projectile,25,12,450,0.1,3.00%,2,1,0,50.00%,0,0.5,0,6,8,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,165.00%,,,Special Scaling,1,0,,3000,15,0.9,0,70,0%,0,Ranged,Ranged,
+Revolver 4,,Ranged,Projectile,40,11,450,0.1,3.00%,2,1,0,50.00%,0,0.5,0,6,8,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,200.00%,,,Special Scaling,1,0,,3000,15,1,0,130,0%,0,Ranged,Ranged,
+Rock 1,,Melee,Thrust,20,67,150,0.1,10.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,5,1,0,10,0%,0,50,25,Rock provides additional Armor/Max HP when upgraded. It also comes with some higher base crit chance despite having a 1.5 Modifier.
+Rock 2,,Melee,Thrust,35,63,150,0.1,15.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,5,1,0,22,0%,0,50,25,Rock provides additional Armor/Max HP when upgraded. It also comes with some higher base crit chance despite having a 1.5 Modifier.
+Rock 3,,Melee,Thrust,50,58,150,0.1,20.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,5,1,0,45,0%,0,50,25,Rock provides additional Armor/Max HP when upgraded. It also comes with some higher base crit chance despite having a 1.5 Modifier.
+Rock 4,,Melee,Thrust,70,54,150,0.1,25.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,5,1,0,91,0%,0,50,25,Rock provides additional Armor/Max HP when upgraded. It also comes with some higher base crit chance despite having a 1.5 Modifier.
+Rocket Launcher 2,,Ranged,Projectile,30,90,500,0.142,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,2000,15,0.8,0,56,1,1.2,Ranged,Ranged,
+Rocket Launcher 3,,Ranged,Projectile,50,65,550,0.142,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,2000,15,0.9,0,103,1,1.2,Ranged,Ranged,
+Rocket Launcher 4,,Ranged,Projectile,80,45,600,0.142,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,1,0,,2000,15,1,0,207,1,1.2,Ranged,Ranged,
+Scissors 1,,Melee,Thrust,5,27,150,0.1,10.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,15,0%,0,72,16,
+Scissors 2,,Melee,Thrust,10,25,150,0.1,12.00%,2.15,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,31,0%,0,72,16,
+Scissors 3,,Melee,Thrust,15,23,150,0.1,15.00%,2.3,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,61,0%,0,72,16,
+Scissors 4,,Melee,Thrust,20,18,150,0.1,20.00%,2.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,Melee,2,1,0,122,0%,0,72,16,
+Screwdriver 1,,Melee,Thrust,8,31,135,0.1,10.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,50.00%,,Special Scaling,0,0,,Melee,3,1,0,10,0%,0,72,16,
+Screwdriver 2,,Melee,Thrust,12,28,135,0.1,15.00%,2.15,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,60.00%,,Special Scaling,0,0,,Melee,3,1,0,22,0%,0,72,16,
+Screwdriver 3,,Melee,Thrust,16,26,135,0.1,20.00%,2.3,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,70.00%,,Special Scaling,0,0,,Melee,3,1,0,45,0%,0,72,16,
+Screwdriver 4,,Melee,Thrust,20,20,135,0.1,30.00%,2.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,80.00%,,Special Scaling,0,0,,Melee,3,1,0,91,0%,0,72,16,
+Scythe 4,,Melee,Swing,150,3,250,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,150.00%,100.00%,,Life Steal,0,0,,Melee,5,1,0,285,0%,0,76.5,52,"The innate 100% life steal doesn't contribute to the weapon's life steal scaling for damage. Only increasing your Life steal stat counts for the scaling. The +3% damage affects all your damage, as it increases the %dmg stat."
+Sharp Tooth 1,,Melee,Thrust,5,35,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,50.00%,,Life Steal,0,0,,Melee,2,1,0,12,0%,0,72,16,
+Sharp Tooth 2,,Melee,Thrust,8,30,160,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,65.00%,,Life Steal,0,0,,Melee,2,1,0,26,0%,0,72,16,
+Sharp Tooth 3,,Melee,Thrust,11,25,170,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,80.00%,,Life Steal,0,0,,Melee,2,1,0,52,0%,0,72,16,
+Sharp Tooth 4,,Melee,Thrust,15,20,180,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,100.00%,,Life Steal,0,0,,Melee,2,1,0,105,0%,0,72,16,
+Shredder 1,,Ranged,Projectile,5,60,450,0.15,3.00%,2,1,0,50.00%,3,0,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,1,0,,2500,0,1,0,15,0%,0,Ranged,Ranged,
+Shredder 2,,Ranged,Projectile,10,55,450,0.15,3.00%,2,1,0,50.00%,3,0,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,1,0,,2500,0,1,0,31,0%,0,Ranged,Ranged,
+Shredder 3,,Ranged,Projectile,15,45,450,0.15,3.00%,2,1,0,50.00%,3,0,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,1,0,,2500,0,1,0,61,0%,0,Ranged,Ranged,
+Shredder 4,,Ranged,Projectile,25,40,450,0.15,3.00%,2,1,0,50.00%,3,0,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,1,0,,2500,0,1,0,122,0%,0,Ranged,Ranged,
+Shuriken 1,,Ranged,Projectile,7,40,350,0.1,35.00%,1.5,1,0,0.00%,0,0.5,1,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,25.00%,,,Special Scaling,0,0,,1500,0,1,0,12,0%,0,Ranged,Ranged,
+Shuriken 2,,Ranged,Projectile,9,38,350,0.1,38.00%,1.5,1,0,0.00%,0,0.5,2,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,34.00%,,,Special Scaling,0,0,,1500,0,1,0,26,0%,0,Ranged,Ranged,
+Shuriken 3,,Ranged,Projectile,11,36,350,0.1,41.00%,1.5,1,0,0.00%,0,0.5,3,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,42.00%,,,Special Scaling,0,0,,1500,0,1,0,52,0%,0,Ranged,Ranged,
+Shuriken 4,,Ranged,Projectile,15,30,350,0.1,45.00%,1.5,1,0,0.00%,0,0.5,4,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,1500,0,1,0,105,0%,0,Ranged,Ranged,
+Slingshot 1,,Ranged,Projectile,10,55,300,0.15,3.00%,2,1,1,0.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,1,0,,2000,5,1,0,15,0%,0,Ranged,Ranged,
+Slingshot 2,,Ranged,Projectile,13,52,300,0.15,3.00%,2,1,2,0.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,1,0,,2000,5,1,0,31,0%,0,Ranged,Ranged,
+Slingshot 3,,Ranged,Projectile,16,50,300,0.15,3.00%,2,1,3,0.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,1,0,,2000,5,1,0,61,0%,0,Ranged,Ranged,
+Slingshot 4,,Ranged,Projectile,20,48,300,0.15,3.00%,2,1,4,0.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,1,0,,2000,5,1,0,122,0%,0,Ranged,Ranged,
+SMG 1,,Ranged,Projectile,3,4,400,0.05,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,1,0,,3000,0,0.7,0,20,0%,0,Ranged,Ranged,
+SMG 2,,Ranged,Projectile,4,4,400,0.05,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,60.00%,,,Special Scaling,1,0,,3000,0,0.75,0,39,0%,0,Ranged,Ranged,
+SMG 3,,Ranged,Projectile,5,4,400,0.05,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,70.00%,,,Special Scaling,1,0,,3000,0,0.8,0,74,0%,0,Ranged,Ranged,
+SMG 4,,Ranged,Projectile,8,3,400,0.05,1.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,1,0,,3000,0,0.85,0,149,0%,0,Ranged,Ranged,
+Sniper Gun 3,,Ranged,Projectile,50,120,800,0.2,20.00%,3,1,0,50.00%,0,0.5,0,0,0,0,0,5,5,0,50%,0,50%,3,20%,10.00%,0,100.00%,20.00%,,Special Scaling,1,0,,3000,30,1,0,115,0%,0,Ranged,Ranged,This weapon is really improved by having some piercing or bounces. Each Pierce or bounce by the main projectile spawns 5/8 full damage projectiles. Sniper Gun benefits much more from range than Ranged damage.
+Sniper Gun 4,,Ranged,Projectile,80,120,1000,0.2,20.00%,4,1,0,50.00%,0,0.5,0,0,0,0,0,5,8,0,50%,0,50%,4,20%,15.00%,0,100.00%,30.00%,,Special Scaling,1,0,,3000,30,1,0,245,0%,0,Ranged,Ranged,This weapon is really improved by having some piercing or bounces. Each Pierce or bounce by the main projectile spawns 5/8 full damage projectiles. Sniper Gun benefits much more from range than Ranged damage.
+Spear 1,,Melee,Thrust,15,45,350,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,0,1,0,20,0%,0,140,16,
+Spear 2,,Melee,Thrust,25,36,375,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,0,1,0,39,0%,0,140,16,
+Spear 3,,Melee,Thrust,40,27,400,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,0,1,0,74,0%,0,140,16,
+Spear 4,,Melee,Thrust,60,18,500,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,0,1,0,149,0%,0,140,16,
+Spiky Shield 1,,Melee,Thrust,10,36,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,0.00%,100.00%,,Armor,0,0,,Melee,20,1,0,15,0%,0,67,52,
+Spiky Shield 2,,Melee,Thrust,15,36,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,0.00%,125.00%,,Armor,0,0,,Melee,20,1,0,31,0%,0,67,52,
+Spiky Shield 3,,Melee,Thrust,20,36,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,0.00%,150.00%,,Armor,0,0,,Melee,20,1,0,61,0%,0,67,52,
+Spiky Shield 4,,Melee,Thrust,30,31,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,0.00%,200.00%,,Armor,0,0,,Melee,20,1,0,122,0%,0,67,52,
+Stick 1,,Melee,Thrust,8,42,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,400.00%,,Additional Sticks,0,0,,Melee,0,1,0,10,0%,0,83,18,
+Stick 2,,Melee,Thrust,9,38,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,600.00%,,Additional Sticks,0,0,,Melee,0,1,0,22,0%,0,83,18,
+Stick 3,,Melee,Thrust,10,34,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,800.00%,,Additional Sticks,0,0,,Melee,0,1,0,45,0%,0,83,18,
+Stick 4,,Melee,Thrust,12,30,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,1000.00%,,Additional Sticks,0,0,,Melee,0,1,0,91,0%,0,83,18,
+Sword 2,,Melee,Swing/Thrust,30,40,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,5,1,0,51,0%,0,112,32,
+Sword 3,,Melee,Swing/Thrust,45,31,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,5,1,0,95,0%,0,112,32,
+Sword 4,,Melee,Swing/Thrust,65,22,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,5,1,0,190,0%,0,112,32,
+Taser 1,,Ranged,Projectile,7,45,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,2000,0,1,0,15,0%,0,Ranged,Ranged,
+Taser 2,,Ranged,Projectile,7,45,200,0.1,3.00%,2,2,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,2000,0,1,0.5,31,0%,0,Ranged,Ranged,
+Taser 3,,Ranged,Projectile,7,45,200,0.1,3.00%,2,3,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,2000,0,1,0.7,61,0%,0,Ranged,Ranged,
+Taser 4,,Ranged,Projectile,14,45,200,0.1,3.00%,2,4,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,2000,0,1,0.7,122,0%,0,Ranged,Ranged,
+Thief Dagger 1,,Melee,Thrust,6,27,150,0.1,20.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,2,1,0,12,0%,0,72,16,
+Thief Dagger 2,,Melee,Thrust,12,22,150,0.1,25.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,2,1,0,26,0%,0,72,16,
+Thief Dagger 3,,Melee,Thrust,18,18,150,0.1,30.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,2,1,0,52,0%,0,72,16,
+Thief Dagger 4,,Melee,Thrust,30,10,150,0.1,40.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,Melee,2,1,0,105,0%,0,72,16,
+Thunder Sword 3,,Melee,Swing,40,36,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,2,0,50%,0,50%,2,3%,100.00%,0,125.00%,125.00%,,Special Scaling,0,0,,Melee,5,1,0,119,0%,0,112,32,
+Thunder Sword 4,,Melee,Swing,75,27,150,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,4,0,50%,0,50%,2,3%,100.00%,0,150.00%,150.00%,,Special Scaling,0,0,,Melee,5,1,0,238,0%,0,112,32,
+Torch 1,,Melee,Swing,1,31,175,0.1,0.00%,1.5,1,0,50.00%,0,0.5,0,0,0,3,3,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,50.00%,,Special Scaling,0,0,,Melee,20,1,0,10,0%,0,72,15.5,
+Torch 2,,Melee,Swing,1,27,175,0.1,0.00%,1.5,1,0,50.00%,0,0.5,0,0,0,5,5,0,0,0,50%,0,50%,2,3%,0.00%,0,65.00%,65.00%,,Special Scaling,0,0,,Melee,20,1,0,22,0%,0,72,15.5,
+Torch 3,,Melee,Swing,1,22,175,0.1,0.00%,1.5,1,0,50.00%,0,0.5,0,0,0,8,6,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,80.00%,,Special Scaling,0,0,,Melee,20,1,0,45,0%,0,72,15.5,
+Torch 4,,Melee,Swing,1,13,175,0.1,0.00%,1.5,1,0,50.00%,0,0.5,0,0,0,12,9,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,100.00%,,Special Scaling,0,0,,Melee,20,1,0,91,0%,0,72,15.5,
+Wand 1,,Ranged,Projectile,1,40,350,0.1,0.00%,2,1,0,50.00%,1,0.5,0,0,0,3,3,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,,,Special Scaling,0,0,,2000,10,1,0,10,0%,0,Ranged,Ranged,
+Wand 2,,Ranged,Projectile,1,35,375,0.1,0.00%,2,1,0,50.00%,1,0.5,0,0,0,5,5,0,0,0,50%,0,50%,2,3%,0.00%,0,65.00%,,,Special Scaling,0,0,,2000,10,1,0,22,0%,0,Ranged,Ranged,
+Wand 3,,Ranged,Projectile,1,30,400,0.1,0.00%,2,1,0,50.00%,1,0.5,0,0,0,8,6,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,,,Special Scaling,0,0,,2000,10,1,0,45,0%,0,Ranged,Ranged,
+Wand 4,,Ranged,Projectile,1,20,425,0.1,0.00%,2,1,0,50.00%,1,0.5,0,0,0,12,9,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,2000,10,1,0,91,0%,0,Ranged,Ranged,
+Wrench 1,,Melee,Swing,12,67,175,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,20,1,0,20,0%,0,88,32,
+Wrench 2,,Melee,Swing,16,63,175,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,20,1,0,39,0%,0,88,32,
+Wrench 3,,Melee,Swing,20,58,175,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,20,1,0,74,0%,0,88,32,
+Wrench 4,,Melee,Swing,24,54,175,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,0,,Melee,20,1,0,149,0%,0,88,32,
+DLC Weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Special Scaling,,,,,,,,,,,,,
+Anchor 2,,Melee,Swing,45,80,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,75.00%,,Special Scaling,0,0,,Melee,10,1,0,48,0%,0,86,32,
+Anchor 3,,Melee,Swing,70,75,200,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,125%,100%,,Special Scaling,0,0,,Melee,10,1,0,90,0%,0,86,32,
+Anchor 4,,Melee,Swing,110,70,225,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,150%,125%,,Special Scaling,0,0,,Melee,10,1,0,175,0%,0,86,32,
+Brick 1,,Melee,Swing,30,50,150,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50.00%,50.00%,,Special Scaling,0,0,,Melee,5,1,0,6,0%,0,65.5,16,
+Brick 2,,Melee,Swing,60,50,150,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,65.00%,65.00%,,Special Scaling,0,0,,Melee,5,1,0,14,0%,0,65.5,16,
+Brick 3,,Melee,Swing,90,50,150,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80%,80%,,Special Scaling,0,0,,Melee,5,1,0,22,0%,0,65.5,16,
+Brick 4,,Melee,Swing,120,50,150,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,100%,,Special Scaling,0,0,,Melee,5,1,0,40,0%,0,65.5,16,
+Captain's Sword 3,,Melee,Swing/Thrust,50,25,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,100.00%,1500.00%,Empty Weapon Slots,0,0,0,Melee,5,1,0,110,0%,0,112,32,
+Captain's Sword 4,,Melee,Swing/Thrust,80,20,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,125%,125%,3000%,Empty Weapon Slots,0,0,0,Melee,5,1,0,210,0%,0,112,32,
+Chainsaw 3,,Melee,Thrust,10,2,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,30,40,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,75%,75%,75%,Life Steal,0,0,0,Melee,0,1,0,112,0%,0,80.5,24,The Health Percentage Damage isn't included in these calculations. The chainsaw has an innate 15%/30% life steal. This doesn't contribute to its DPS. Only the Life steal stat itself is counted towards the damage. Chainsaw also is the only reloading melee weapon.
+Chainsaw 4,,Melee,Thrust,20,2,200,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,40,30,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,100%,100%,Life Steal,0,0,0,Melee,0,1,0,242,0%,0,80.5,24,The Health Percentage Damage isn't included in these calculations. The chainsaw has an innate 15%/30% life steal. This doesn't contribute to its DPS. Only the Life steal stat itself is counted towards the damage. Chainsaw also is the only reloading melee weapon.
+Hiking Pole 1,,Melee,Thrust,12,50,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,10%,,Special Scaling,0,0,,Melee,0,1,0,17,0%,0,92,20.5,
+Hiking Pole 2,,Melee,Thrust,18,45,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,12%,,Special Scaling,0,0,,Melee,0,1,0,34,0%,0,92,20.5,
+Hiking Pole 3,,Melee,Thrust,24,40,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,15%,,Special Scaling,0,0,,Melee,0,1,0,66,0%,0,92,20.5,
+Hiking Pole 4,,Melee,Thrust,30,35,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,20%,,Special Scaling,0,0,,Melee,0,1,0,130,0%,0,92,20.5,
+Lute 1,,Melee,Swing,4,45,150,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,10%,,Luck,0,0,,Melee,2,1,0,15,0%,0,73.5,21.5,
+Lute 2,,Melee,Swing,8,40,175,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,15%,,Luck,0,0,,Melee,2,1,0,31,0%,0,73.5,21.5,
+Lute 3,,Melee,Swing,12,35,200,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,20%,,Luck,0,0,,Melee,2,1,0,61,0%,0,73.5,21.5,
+Lute 4,,Melee,Swing,16,30,225,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,25%,,Luck,0,0,,Melee,2,1,0,122,0%,0,73.5,21.5,
+Mace 2,,Melee,Swing,40,50,150,0.1,4.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,-50%,,Special Scaling,0,5,,Melee,5,1,0,46,0%,0,88,32,
+Mace 3,,Melee,Swing,60,45,150,0.1,8.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,-75%,,Special Scaling,0,5,,Melee,5,1,0,92,0%,0,88,32,
+Mace 4,,Melee,Swing,100,40,150,0.1,12.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,-100%,,Special Scaling,0,5,,Melee,5,1,0,185,0%,0,88,32,
+Sickle 1,,Melee,Swing,5,20,125,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80%,10%,,Harvesting,0,0,,Melee,2,1,0,15,0%,0,74,28,
+Sickle 2,,Melee,Swing,8,17,125,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80%,15%,,Harvesting,0,0,,Melee,2,1,0,31,0%,0,74,28,
+Sickle 3,,Melee,Swing,12,14,125,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80%,20%,,Harvesting,0,0,,Melee,2,1,0,61,0%,0,74,28,
+Sickle 4,,Melee,Swing,15,10,125,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80%,25%,,Harvesting,0,0,,Melee,2,1,0,122,0%,0,74,28,
+Spoon 1,,Melee,Swing,10,30,150,0.1,0%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,15%,,Special Scaling,0,0,,Melee,2,1,0,15,0%,0,72,16,Attacks always crit against Burning targets.
+Spoon 2,,Melee,Swing,15,25,165,0.1,0%,2.25,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,20%,,Special Scaling,0,0,,Melee,2,1,0,31,0%,0,72,16,Attacks always crit against Burning targets.
+Spoon 3,,Melee,Swing,20,20,180,0.1,0%,2.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,25%,,Special Scaling,0,0,,Melee,2,1,0,61,0%,0,72,16,Attacks always crit against Burning targets.
+Spoon 4,,Melee,Swing,25,15,200,0.1,0%,3,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,25%,,Special Scaling,0,0,,Melee,2,1,0,122,0%,0,72,16,Attacks always crit against Burning targets.
+Trident 2,,Melee,Thrust,30,50,325,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,15%,,Special Scaling,0,0,,Melee,0,1,0,49,0%,0,139.5,25,
+Trident 3,,Melee,Thrust,50,45,325,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,30%,,Special Scaling,0,0,,Melee,0,1,0,96,0%,0,139.5,25,
+Trident 4,,Melee,Thrust,80,40,325,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,50%,,Special Scaling,0,0,,Melee,0,1,0,200,0%,0,139.5,25,
+War Hammer 3,,Melee,Swing,100,90,200,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,150%,150%,,Special Scaling,0,0,,Melee,20,1,0,130,0%,0,84,32,Resets structure cooldowns on attack.
+War Hammer 4,,Melee,Swing,200,80,200,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,200%,200%,,Special Scaling,0,0,,Melee,25,1,0,255,0%,0,84,32,Resets structure cooldowns on attack.
+Blunderbuss 2,,Ranged,Projectile,22,300,325,0.1,3.00%,2,1,0,50.00%,2,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,110%,,,Special Scaling,1,,,3000,10,0.90,0,45,0%,0,Ranged,Ranged,Picking up a material only resets one Blunderbuss. So avoid having more than 1-2 blunderbusses. That would be a blunder.
+Blunderbuss 3,,Ranged,Projectile,45,300,350,0.1,3.00%,2.25,1,0,50.00%,2,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,135%,,,Special Scaling,1,,,3000,20,0.90,0,95,0%,0,Ranged,Ranged,Picking up a material only resets one Blunderbuss. So avoid having more than 1-2 blunderbusses. That would be a blunder.
+Blunderbuss 4,,Ranged,Projectile,70,300,375,0.1,3.00%,2.5,1,0,50.00%,2,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,170%,,,Special Scaling,1,,,3000,30,0.90,0,192,0%,0,Ranged,Ranged,Picking up a material only resets one Blunderbuss. So avoid having more than 1-2 blunderbusses. That would be a blunder.
+Flute 1,,Ranged,Projectile,6,50,300,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,10%,,Luck,1,0,,2000,0,1,0,20,0%,0,Ranged,Ranged,
+Flute 2,,Ranged,Projectile,8,45,325,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,15%,,Luck,1,0,,2000,0,1,0,45,0%,0,Ranged,Ranged,
+Flute 3,,Ranged,Projectile,11,40,350,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,20%,,Luck,1,0,,2000,0,1,0,80,0%,0,Ranged,Ranged,
+Flute 4,,Ranged,Projectile,15,35,375,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,50%,25%,,Luck,1,0,,2000,0,1,0,165,0%,0,Ranged,Ranged,
+Grenade Launcher 2,,Ranged,Projectile,12,10,350,0.1,5%,2.5,1,1,0%,0,0.5,0,2,21,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,,,Special Scaling,1,,,2000,0,0.8,0,58,100%,0.75,Ranged,Ranged,
+Grenade Launcher 3,,Ranged,Projectile,18,10,400,0.1,10%,3,1,1,0%,0,0.5,0,3,18,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,,,Special Scaling,1,,,2000,0,0.8,0,108,100%,0.75,Ranged,Ranged,
+Grenade Launcher 4,,Ranged,Projectile,30,10,450,0.1,20%,3.5,1,1,0%,0,0.5,0,4,15,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,,,Special Scaling,1,,,2000,0,0.8,0,212,100%,0.75,Ranged,Ranged,
+Harpoon Gun 2,,Ranged,Projectile,5,25,800,0.2,3.00%,1.5,1,0,50.00%,3,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,100%,,Special Scaling,1,0,,3000,-30,1,0,50,0%,0,Ranged,Ranged,
+Harpoon Gun 3,,Ranged,Projectile,10,20,850,0.2,3.00%,1.5,1,0,50.00%,4,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,100%,,Special Scaling,1,0,,3000,-30,1,0,105,0%,0,Ranged,Ranged,
+Harpoon Gun 4,,Ranged,Projectile,20,15,900,0.2,3.00%,1.5,1,0,50.00%,5,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,100%,,Special Scaling,1,0,,3000,-30,1,0,220,0%,0,Ranged,Ranged,
+Javelin 1,,Ranged,Projectile,8,60,350,0.1,0%,2.5,1,0,50.00%,2,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,,,Special Scaling,0,,,2000,0,1,0,18,0%,0,Ranged,Ranged,
+Javelin 2,,Ranged,Projectile,12,55,375,0.1,0%,2.75,1,0,50.00%,3,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,,,Special Scaling,0,,,2000,0,1,0,36,0%,0,Ranged,Ranged,
+Javelin 3,,Ranged,Projectile,16,50,400,0.1,0%,3,1,0,50.00%,4,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,,,Special Scaling,0,,,2000,0,1,0,66,0%,0,Ranged,Ranged,
+Javelin 4,,Ranged,Projectile,20,45,425,0.1,0%,3.25,1,0,50.00%,5,0.25,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,,,Special Scaling,0,,,2000,0,1,0,140,0%,0,Ranged,Ranged,
+EE Weapons,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vorpal Sword 2,,Melee,Swing/Thrust,20,30,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,,,Melee,5,1,0,55,0%,0,75,16,"The Vorpal Sword is a slightly more expensive version of the Sword. It attacks slightly faster, but has less base damage. It features a 1%/2%/3% chance to instantly kill enemies, including bosses. It has a smaller hit box than the regular sword."
+Vorpal Sword 3,,Melee,Swing/Thrust,35,25,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,,,Melee,5,1,0,100,0%,0,75,16,"The Vorpal Sword is a slightly more expensive version of the Sword. It attacks slightly faster, but has less base damage. It features a 1%/2%/3% chance to instantly kill enemies, including bosses. It has a smaller hit box than the regular sword."
+Vorpal Sword 4,,Melee,Swing/Thrust,55,20,200,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100.00%,,,Special Scaling,0,,,Melee,5,1,0,200,0%,0,75,16,"The Vorpal Sword is a slightly more expensive version of the Sword. It attacks slightly faster, but has less base damage. It features a 1%/2%/3% chance to instantly kill enemies, including bosses. It has a smaller hit box than the regular sword."
+Railgun 1,,Ranged,Projectile,10,52,300,0.1,3.00%,1.5,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,30%,,Dodge,1,0,,3000,0,1,0,20,0%,0,Ranged,Ranged,Gains 3 Damage per 5 seconds of not taking damage. Not included in the calculation.
+Railgun 2,,Ranged,Projectile,15,49,300,0.1,3.00%,1.75,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,80.00%,35%,,Dodge,1,0,,3000,0,1,0,40,0%,0,Ranged,Ranged,Gains 4 Damage per 5 seconds of not taking damage. Not included in the calculation.
+Railgun 3,,Ranged,Projectile,20,47,300,0.1,3.00%,2,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,90%,40%,,Dodge,1,0,,3000,0,1,0,80,0%,0,Ranged,Ranged,Gains 5 Damage per 5 seconds of not taking damage. Not included in the calculation.
+Railgun 4,,Ranged,Projectile,35,45,300,0.1,3.00%,2.25,1,0,50.00%,0,0.5,0,0,0,0,0,0,0,0,50%,0,50%,2,3%,0.00%,0,100%,45%,,Dodge,1,0,,3000,0,1,0,160,0%,0,Ranged,Ranged,Gains 6 Damage per 5 seconds of not taking damage. Not included in the calculation.
