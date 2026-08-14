@@ -15,12 +15,26 @@ import json
 import os
 import re
 import shutil
+import sys
 from multiprocessing import Pool
 
 from dps_optimizer import best_split as dps_best_split
 from dps_optimizer import classify_weapon, resolve_icon
 from dps_optimizer import DAMAGE_STAT_PER_LEVEL, DMG_PCT_PER_LEVEL, ATK_SPD_PER_LEVEL, CRIT_CHANCE_PER_LEVEL
 from ehp_optimizer import best_split as ehp_best_split
+
+# Line-buffer stdout even when it's not a TTY (e.g. piped into a CI log), so
+# progress prints show up immediately instead of sitting in Python's default
+# full-buffering mode until the process exits.
+sys.stdout.reconfigure(line_buffering=True)
+
+# Non-weapon icons used by the site's UI chrome (About/eHP page headers),
+# copied from the same source icons/ tree as weapon icons - not tied to any
+# specific weapon, so build_index_and_jobs never sees them.
+EXTRA_ICONS = {
+    "icons/items/all/medikit/medikit_icon.png": "items/medikit_icon.png",
+    "icons/items/all/focus/focus_icon.png": "items/focus_icon.png",
+}
 
 DISPLAY_FIELDS = [
     "Weapon Type",
@@ -194,16 +208,26 @@ def main():
     os.makedirs(weapons_dir, exist_ok=True)
     os.makedirs(icons_dir, exist_ok=True)
 
+    for src, dest in EXTRA_ICONS.items():
+        dest_path = os.path.join(icons_dir, dest)
+        os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+        if os.path.isfile(src):
+            shutil.copyfile(src, dest_path)
+        else:
+            print(f"warning: extra icon source not found: {src!r}")
+
     rows = load_rows(args.csv)
     index, jobs = build_index_and_jobs(rows, args.n, icons_dir, only_filters)
+
+    name_by_id = {weapon_id: row["Weapon"].strip() for weapon_id, row, _, _ in jobs}
 
     print(f"Computing DPS curves for {len(jobs)} supported weapons at N=0..{args.n}...")
     with Pool() as pool:
         results = []
         for i, result in enumerate(pool.imap_unordered(compute_weapon_curve, jobs), 1):
             results.append(result)
-            if i % 25 == 0 or i == len(jobs):
-                print(f"  {i}/{len(jobs)} weapons done")
+            weapon_id = result[0]
+            print(f"  {i}/{len(jobs)} {name_by_id[weapon_id]} finished N=0..{args.n}")
 
     write_weapon_files(jobs, results, weapons_dir)
 

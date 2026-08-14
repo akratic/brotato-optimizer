@@ -24,7 +24,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Cache built weapon/eHP data
+        id: cache-data
+        uses: actions/cache@v4
+        with:
+          path: |
+            site/public/data
+            site/public/icons
+          key: dps-data-${{ hashFiles('weapons.csv', 'dps_optimizer.py', 'ehp_optimizer.py', 'build_site_data.py', 'icons/**') }}
+
       - name: Build weapon/eHP data
+        if: steps.cache-data.outputs.cache-hit != 'true'
         run: python3 build_site_data.py --n 100
 
       - uses: actions/setup-node@v4

@@ -33,6 +33,14 @@ export default function About({ dataBase }) {
         stats for each weapon at each investment level.
       </p>
 
+      <p>
+        Found a bug or have a suggestion?{" "}
+        <a href="https://github.com/akratic/brotato-optimizer/issues" target="_blank" rel="noopener noreferrer">
+          Open an issue on GitHub
+        </a>
+        .
+      </p>
+
       <AllWeaponsChart dataBase={dataBase} />
     </section>
   );
