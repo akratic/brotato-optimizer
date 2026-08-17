@@ -59,10 +59,10 @@ Hand 1,,Melee,Thrust,1,27,150,0.1,0.01,1.5,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0
 Hand 2,,Melee,Thrust,1,22,150,0.1,0.01,1.5,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,,,Special Scaling,DPS_Melee_Damage,1.0,,1.0,,1.0,Melee,30,1,0,22,0,0,48,24,Gives +6 Harvesting
 Hand 3,,Melee,Thrust,1,18,150,0.1,0.01,1.5,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,,,Special Scaling,DPS_Melee_Damage,1.0,,1.0,,1.0,Melee,30,1,0,45,0,0,48,24,Gives +12 Harvesting
 Hand 4,,Melee,Thrust,1,9,150,0.1,0.01,1.5,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,,,Special Scaling,DPS_Melee_Damage,1.0,,1.0,,1.0,Melee,30,1,0,91,0,0,48,24,Gives +25 Harvesting
-Hatchet 1,,Melee,Swing,7,9,125,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,0.15,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Attack_Speed,100.0,,1.0,Melee,2,1,0,10,0,0,74,28,
-Hatchet 2,,Melee,Swing,11,8,125,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,0.15,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Attack_Speed,100.0,,1.0,Melee,2,1,0,22,0,0,74,28,
-Hatchet 3,,Melee,Swing,22,7,125,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,0.15,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Attack_Speed,100.0,,1.0,Melee,2,1,0,45,0,0,74,28,
-Hatchet 4,,Melee,Swing,45,6,125,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,0.15,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Attack_Speed,100.0,,1.0,Melee,2,1,0,91,0,0,74,28,
+Hatchet 1,,Melee,Swing,7,9,125,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,0.2,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Attack_Speed,100.0,,1.0,Melee,2,1,0,10,0,0,74,28,
+Hatchet 2,,Melee,Swing,11,8,125,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,0.2,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Attack_Speed,100.0,,1.0,Melee,2,1,0,22,0,0,74,28,
+Hatchet 3,,Melee,Swing,22,7,125,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,0.2,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Attack_Speed,100.0,,1.0,Melee,2,1,0,45,0,0,74,28,
+Hatchet 4,,Melee,Swing,45,6,125,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,0.2,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Attack_Speed,100.0,,1.0,Melee,2,1,0,91,0,0,74,28,
 Jousting Lance 1,,Melee,Thrust,20,55,250,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,0.3,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Special_Stat,1.0,,1.0,Melee,0,1,0,20,0,0,140,16,
 Jousting Lance 2,,Melee,Thrust,25,50,250,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,0.35,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Special_Stat,1.0,,1.0,Melee,0,1,0,36,0,0,140,16,
 Jousting Lance 3,,Melee,Thrust,30,45,250,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,0.4,,Special Scaling,DPS_Melee_Damage,1.0,DPS_Special_Stat,1.0,,1.0,Melee,0,1,0,72,0,0,140,16,
@@ -176,9 +176,9 @@ Sword 2,,Melee,Swing/Thrust,30,40,200,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0
 Sword 3,,Melee,Swing/Thrust,45,31,200,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,,,Special Scaling,DPS_Melee_Damage,1.0,,1.0,,1.0,Melee,5,1,0,95,0,0,112,32,
 Sword 4,,Melee,Swing/Thrust,65,22,200,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,1,,,Special Scaling,DPS_Melee_Damage,1.0,,1.0,,1.0,Melee,5,1,0,190,0,0,112,32,
 Taser 1,,Ranged,Projectile,7,45,200,0.1,0.03,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.8,,,Special Scaling,DPS_Elemental_Damage,1.0,,1.0,,1.0,2000,0,1,0,15,0,0,Ranged,Ranged,
-Taser 2,,Ranged,Projectile,7,45,200,0.1,0.03,2,2,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.8,,,Special Scaling,DPS_Elemental_Damage,1.0,,1.0,,1.0,2000,0,1,0.5,31,0,0,Ranged,Ranged,
-Taser 3,,Ranged,Projectile,7,45,200,0.1,0.03,2,3,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.8,,,Special Scaling,DPS_Elemental_Damage,1.0,,1.0,,1.0,2000,0,1,0.7,61,0,0,Ranged,Ranged,
-Taser 4,,Ranged,Projectile,14,45,200,0.1,0.03,2,4,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.8,,,Special Scaling,DPS_Elemental_Damage,1.0,,1.0,,1.0,2000,0,1,0.7,122,0,0,Ranged,Ranged,
+Taser 2,,Ranged,Projectile,7,45,200,0.1,0.03,2,2,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.7,,,Special Scaling,DPS_Elemental_Damage,1.0,,1.0,,1.0,2000,0,1,0.5,31,0,0,Ranged,Ranged,
+Taser 3,,Ranged,Projectile,7,45,200,0.1,0.03,2,3,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.6,,,Special Scaling,DPS_Elemental_Damage,1.0,,1.0,,1.0,2000,0,1,0.7,61,0,0,Ranged,Ranged,
+Taser 4,,Ranged,Projectile,14,45,200,0.1,0.03,2,4,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,,,Special Scaling,DPS_Elemental_Damage,1.0,,1.0,,1.0,2000,0,1,0.7,122,0,0,Ranged,Ranged,
 Thief Dagger 1,,Melee,Thrust,6,27,150,0.1,0.2,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,,,Special Scaling,DPS_Melee_Damage,1.0,,1.0,,1.0,Melee,2,1,0,12,0,0,72,16,
 Thief Dagger 2,,Melee,Thrust,12,22,150,0.1,0.25,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,,,Special Scaling,DPS_Melee_Damage,1.0,,1.0,,1.0,Melee,2,1,0,26,0,0,72,16,
 Thief Dagger 3,,Melee,Thrust,18,18,150,0.1,0.3,2,1,0,0.5,0,0.5,0,0,0,0,0,0,0,0,0.5,0,0.5,2,0.03,0,0,0.5,,,Special Scaling,DPS_Melee_Damage,1.0,,1.0,,1.0,Melee,2,1,0,52,0,0,72,16,

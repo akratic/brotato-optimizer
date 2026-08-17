@@ -9,6 +9,8 @@ export const WEAPON_STAT_LABELS = {
   luck: "Luck",
   life_steal: "Life Steal",
   harvesting: "Harvesting",
+  max_hp: "Max HP",
+  range: "Range",
   dmgPct: "Damage %",
   atkSpd: "Attack Speed",
   crit: "Crit Chance",

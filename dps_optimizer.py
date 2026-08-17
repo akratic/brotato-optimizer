@@ -13,9 +13,15 @@ DAMAGE_STAT_NAMES = {
 DAMAGE_STAT_KEYS = {v: k for k, v in DAMAGE_STAT_NAMES.items()}
 
 # Superset of DAMAGE_STAT_NAMES used only to detect/compare *hybrid* weapons'
-# competing scaling stats (see classify_weapon) - Engineering shows up as a
-# third competing stat on Plank, alongside melee/elemental.
-HYBRID_STAT_NAMES = {**DAMAGE_STAT_NAMES, "engineering": "DPS_Engineering"}
+# competing scaling stats (see classify_weapon) - these show up directly as a
+# weapon's 2nd/3rd Scaling Stat (unlike Armor/Dodge/etc, which are only ever
+# reached indirectly through the generic DPS_Special_Stat slot below).
+HYBRID_STAT_NAMES = {
+    **DAMAGE_STAT_NAMES,
+    "engineering": "DPS_Engineering",
+    "max_hp": "DPS_Max_HP",
+    "range": "DPS_Range_Stat",
+}
 HYBRID_STAT_KEYS = {v: k for k, v in HYBRID_STAT_NAMES.items()}
 
 # Stat gained per level-up point, per the game's official level-up table.
@@ -25,6 +31,7 @@ DAMAGE_STAT_PER_LEVEL = {
     "ranged": 1.0, "melee": 2.0, "elemental": 1.0,
     "armor": 1.0, "engineering": 1.5, "speed": 3.0,
     "dodge": 3.0, "luck": 7.5, "life_steal": 1.5, "harvesting": 4.0,
+    "max_hp": 3.0, "range": 20.0,
 }
 DMG_PCT_PER_LEVEL = 0.04
 ATK_SPD_PER_LEVEL = 0.05
@@ -211,7 +218,9 @@ def compute_dps(weapon_row, damage_stat, damage_levels, dmg_pct_levels, atk_spd_
     increments (see classify_weapon for how a weapon's damage_stat is chosen,
     including hybrid weapons and the Armor/Speed special-stat overrides).
     Each level-up: ranged/elemental damage +1, melee damage +2, armor +1,
-    engineering +1.5, speed +3, dmg% +4%, attack speed +5%, crit chance +3%.
+    engineering +1.5, speed +3, max_hp +3 (on top of a 10-point floor present
+    regardless of build), range +20, dmg% +4%, attack speed +5%, crit chance
+    +3%.
     """
     row = weapon_row
     if row["Weapon Type"] not in ("Ranged", "Melee"):
@@ -224,7 +233,10 @@ def compute_dps(weapon_row, damage_stat, damage_levels, dmg_pct_levels, atk_spd_
         "DPS_Ranged_Damage": 0.0,
         "DPS_Elemental_Damage": 0.0,
         "DPS_Engineering": 0.0,
-        "DPS_Max_HP": 0.0,
+        # Every character has a 10 HP floor regardless of build, present even
+        # when "max_hp" isn't the chosen lever (unlike Armor/Dodge/etc, which
+        # genuinely start at 0).
+        "DPS_Max_HP": 10.0,
         "DPS_Special_Stat": 0.0,
         "DPS_Curse": 0.0,
         "DPS_Range_Stat": 0.0,
@@ -236,7 +248,9 @@ def compute_dps(weapon_row, damage_stat, damage_levels, dmg_pct_levels, atk_spd_
         damage_stat_name = DAMAGE_STAT_NAMES[damage_stat]
     else:
         damage_stat_name = HYBRID_STAT_NAMES[damage_stat]
-    stat_values[damage_stat_name] = DAMAGE_STAT_PER_LEVEL[damage_stat] * float(damage_levels)
+    # "+=" (not "=") so max_hp's guaranteed 10-point floor above survives even
+    # when max_hp isn't the winning lever.
+    stat_values[damage_stat_name] += DAMAGE_STAT_PER_LEVEL[damage_stat] * float(damage_levels)
     dmg_percent = DMG_PCT_PER_LEVEL * dmg_pct_levels
     attack_speed = ATK_SPD_PER_LEVEL * atk_spd_levels
     crit_chance_stat = CRIT_CHANCE_PER_LEVEL * crit_levels
