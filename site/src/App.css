@@ -522,6 +522,10 @@ table.curve-table td {
   border-bottom: 1px solid var(--gridline);
 }
 
+table.curve-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--text-primary) 2%, transparent);
+}
+
 table.curve-table tr.curve-row-active {
   background: color-mix(in srgb, var(--series-1) 15%, transparent);
 }
