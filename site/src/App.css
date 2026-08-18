@@ -8,6 +8,8 @@
   --gridline: #e1e0d9;
   --baseline: #c3c2b7;
   --series-1: #2a78d6;
+  --series-2: #706e66;
+  --series-3: #706e66;
   --border: rgba(11, 11, 11, 0.1);
 }
 
@@ -22,6 +24,8 @@
     --gridline: #2c2c2a;
     --baseline: #383835;
     --series-1: #3987e5;
+    --series-2: #9c9a8d;
+    --series-3: #9c9a8d;
     --border: rgba(255, 255, 255, 0.1);
   }
 }
@@ -36,6 +40,8 @@
   --gridline: #2c2c2a;
   --baseline: #383835;
   --series-1: #3987e5;
+  --series-2: #9c9a8d;
+  --series-3: #9c9a8d;
   --border: rgba(255, 255, 255, 0.1);
 }
 
@@ -331,6 +337,13 @@ table.split-table th {
   margin-top: 20px;
 }
 
+.chart-title {
+  margin: 24px 0 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
 .all-weapons-chart svg {
   cursor: crosshair;
 }
@@ -345,6 +358,87 @@ table.split-table th {
   fill: var(--series-1);
   stroke: var(--surface-1);
   stroke-width: 2;
+}
+
+.chart-line-2 {
+  stroke: var(--series-2);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart-line-3 {
+  stroke: var(--series-3);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 6 4;
+}
+
+.chart-marker-0 {
+  fill: var(--series-1);
+  stroke: var(--surface-1);
+  stroke-width: 2;
+}
+
+.chart-marker-1 {
+  fill: var(--series-2);
+  stroke: var(--surface-1);
+  stroke-width: 2;
+}
+
+.chart-marker-2 {
+  fill: var(--series-3);
+  stroke: var(--surface-1);
+  stroke-width: 2;
+}
+
+.chart-tooltip-value.series-0 {
+  color: var(--series-1);
+}
+
+.chart-tooltip-value.series-1 {
+  color: var(--series-2);
+}
+
+.chart-tooltip-value.series-2 {
+  color: var(--series-3);
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.chart-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.chart-legend-swatch {
+  width: 16px;
+  height: 0;
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  display: inline-block;
+}
+
+.chart-legend-swatch.series-0 {
+  border-bottom-color: var(--series-1);
+}
+
+.chart-legend-swatch.series-1 {
+  border-bottom-color: var(--series-2);
+}
+
+.chart-legend-swatch.series-2 {
+  border-bottom-color: var(--series-3);
+  border-bottom-style: dashed;
 }
 
 .chart-tooltip {

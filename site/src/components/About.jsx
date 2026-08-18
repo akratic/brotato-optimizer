@@ -1,4 +1,5 @@
 import AllWeaponsChart from "./AllWeaponsChart.jsx";
+import DodgeArmorChart from "./DodgeArmorChart.jsx";
 
 export default function About({ dataBase }) {
   return (
@@ -28,7 +29,7 @@ export default function About({ dataBase }) {
       </p>
 
       <p>
-        Optimizer simply brute forces trying all combinations of N grey level ups. In practice
+        Optimizer brute force tries all combinations of N grey level ups. In practice
         your items and luck will be different, but this still shows the ideal combination of
         stats for each weapon at each investment level.
       </p>
@@ -41,7 +42,16 @@ export default function About({ dataBase }) {
         .
       </p>
 
+      <h3 className="chart-title">DPS: All Weapons</h3>
       <AllWeaponsChart dataBase={dataBase} />
+
+      <h3 className="chart-title">Dodge vs Armor Value</h3>
+      <DodgeArmorChart dataBase={dataBase} />
+      <p>
+        How much one dodge level-up (+3% dodge) is worth relative to one armor level-up (+1
+        armor), as a multiple, depending on how much dodge you already have. 1.0 means they're
+        worth the same; above 1.0 dodge is the better pick, below 1.0 armor is.
+      </p>
     </section>
   );
 }

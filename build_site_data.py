@@ -22,6 +22,7 @@ from dps_optimizer import best_split as dps_best_split
 from dps_optimizer import classify_weapon, resolve_icon
 from dps_optimizer import DAMAGE_STAT_PER_LEVEL, DMG_PCT_PER_LEVEL, ATK_SPD_PER_LEVEL, CRIT_CHANCE_PER_LEVEL
 from ehp_optimizer import best_split as ehp_best_split
+from ehp_optimizer import dodge_armor_coefficient_curve
 
 # Line-buffer stdout even when it's not a TTY (e.g. piped into a CI log), so
 # progress prints show up immediately instead of sitting in Python's default
@@ -187,6 +188,25 @@ def build_ehp_curve(n_max):
     return curve
 
 
+DODGE_CAP_SERIES = [
+    {"key": "normal", "label": "Normal (60% cap)", "cap": 60},
+    {"key": "ghostOutfit", "label": "Ghost Outfit (70% cap)", "cap": 70},
+    {"key": "ghost", "label": "Ghost (90% cap)", "cap": 90},
+]
+
+
+def build_dodge_armor_curve():
+    series_curves = {s["key"]: dodge_armor_coefficient_curve(cap=s["cap"]) for s in DODGE_CAP_SERIES}
+    dodges = [row["dodge"] for row in series_curves["normal"]]
+    curve = []
+    for i, dodge in enumerate(dodges):
+        row = {"dodge": dodge}
+        for s in DODGE_CAP_SERIES:
+            row[s["key"]] = round(series_curves[s["key"]][i]["m"], 4)
+        curve.append(row)
+    return curve
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--n", type=int, default=10, help="max level-up total N; curves are computed for 0..N (default: 10)")
@@ -241,6 +261,11 @@ def main():
     ehp_curve = build_ehp_curve(args.n)
     with open(os.path.join(data_dir, "ehp.json"), "w", encoding="utf-8") as f:
         json.dump({"curve": ehp_curve}, f, indent=2)
+
+    dodge_armor_curve = build_dodge_armor_curve()
+    dodge_armor_series = [{"key": s["key"], "label": s["label"]} for s in DODGE_CAP_SERIES]
+    with open(os.path.join(data_dir, "dodge-armor-coefficient.json"), "w", encoding="utf-8") as f:
+        json.dump({"series": dodge_armor_series, "curve": dodge_armor_curve}, f, indent=2)
 
     supported_count = sum(1 for w in index if w["supported"])
     print(f"Wrote {len(index)} weapons ({supported_count} supported) at N=0..{args.n} to {data_dir}")

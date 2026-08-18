@@ -2,8 +2,8 @@ def armor_factor(armor):
     return 1 + (2 / 30) * armor
 
 
-def dodge_factor(dodge):
-    return 1 / (1 - min(dodge, 60) / 100) if dodge > 0 else 1
+def dodge_factor(dodge, cap=60):
+    return 1 / (1 - min(dodge, cap) / 100) if dodge > 0 else 1
 
 
 def ehp(hp_levels, armor_levels, dodge_levels):
@@ -34,6 +34,26 @@ def all_splits(n):
     return rows
 
 
+def dodge_armor_coefficient_curve(min_dodge=-10, max_dodge=100, cap=60):
+    """
+    Relative value of +3% dodge vs +1 armor, as starting dodge varies.
+    EHP is a pure product (hp * armor_factor * dodge_factor), so the *relative*
+    (%) EHP gain from bumping either factor is independent of the other two -
+    it only depends on the factor's own current value. armor_factor is linear,
+    so its %-gain from +1 armor is the same 2/30 regardless of starting armor.
+
+    `cap` is the dodge cap to use (normally 60; some items like Ghost Outfit/Ghost
+    raise it).
+    """
+    armor_pct_gain = armor_factor(1) / armor_factor(0) - 1
+    curve = []
+    for dodge in range(min_dodge, max_dodge + 1):
+        dodge_pct_gain = dodge_factor(dodge + 3, cap) / dodge_factor(dodge, cap) - 1
+        m = dodge_pct_gain / armor_pct_gain
+        curve.append({"dodge": dodge, "dodge_pct_gain": dodge_pct_gain, "armor_pct_gain": armor_pct_gain, "m": m})
+    return curve
+
+
 if __name__ == "__main__":
     N = 4
     print(f"All unique (hp, armor, dodge) splits for N={N}:")
@@ -48,14 +68,6 @@ if __name__ == "__main__":
         value, a, b, c = best_split(n)
         print(f"{n},{a},{b},{c},{value:.4f}")
 
-    # Relative value of +3% dodge vs +1 armor, as starting dodge varies.
-    # EHP is a pure product (hp * armor_factor * dodge_factor), so the *relative*
-    # (%) EHP gain from bumping either factor is independent of the other two -
-    # it only depends on the factor's own current value. armor_factor is linear,
-    # so its %-gain from +1 armor is the same 2/30 regardless of starting armor.
-    armor_pct_gain = armor_factor(1) / armor_factor(0) - 1
     print("\nstarting_dodge,dodge_pct_gain,armor_pct_gain,M")
-    for dodge in range(0, 101):
-        dodge_pct_gain = dodge_factor(dodge + 3) / dodge_factor(dodge) - 1
-        m = dodge_pct_gain / armor_pct_gain
-        print(f"{dodge},{dodge_pct_gain:.6f},{armor_pct_gain:.6f},{m:.4f}")
+    for row in dodge_armor_coefficient_curve():
+        print(f"{row['dodge']},{row['dodge_pct_gain']:.6f},{row['armor_pct_gain']:.6f},{row['m']:.4f}")

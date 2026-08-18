@@ -14,7 +14,19 @@ function niceMax(value) {
   return step * magnitude;
 }
 
-export default function DpsChart({ curve, xKey = "n", yKey, unit = "", highlightX }) {
+function defaultYTickFormat(v) {
+  return v >= 1000 ? `${(v / 1000).toFixed(1)}k` : Math.round(v);
+}
+
+export default function DpsChart({
+  curve,
+  xKey = "n",
+  yKey,
+  unit = "",
+  highlightX,
+  xLabel = "N",
+  yTickFormat = defaultYTickFormat,
+}) {
   const [hoverIdx, setHoverIdx] = useState(null);
 
   const innerW = WIDTH - PAD.left - PAD.right;
@@ -89,7 +101,7 @@ export default function DpsChart({ curve, xKey = "n", yKey, unit = "", highlight
               className="chart-gridline"
             />
             <text x={PAD.left - 8} y={yScale(t)} className="chart-tick" textAnchor="end" dominantBaseline="middle">
-              {t >= 1000 ? `${(t / 1000).toFixed(1)}k` : Math.round(t)}
+              {yTickFormat(t)}
             </text>
           </g>
         ))}
@@ -102,10 +114,10 @@ export default function DpsChart({ curve, xKey = "n", yKey, unit = "", highlight
           className="chart-axis"
         />
         <text x={PAD.left} y={HEIGHT - 6} className="chart-tick">
-          N={minX}
+          {xLabel}={minX}
         </text>
         <text x={WIDTH - PAD.right} y={HEIGHT - 6} className="chart-tick" textAnchor="end">
-          N={maxX}
+          {xLabel}={maxX}
         </text>
 
         <path d={pathD} className="chart-line" fill="none" />
@@ -138,7 +150,9 @@ export default function DpsChart({ curve, xKey = "n", yKey, unit = "", highlight
             {active[yKey].toFixed(active[yKey] < 10 ? 2 : 1)}
             {unit}
           </div>
-          <div className="chart-tooltip-label">N = {active[xKey]}</div>
+          <div className="chart-tooltip-label">
+            {xLabel} = {active[xKey]}
+          </div>
         </div>
       )}
     </div>
