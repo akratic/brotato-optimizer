@@ -1,4 +1,3 @@
-import AllWeaponsChart from "./AllWeaponsChart.jsx";
 import DodgeArmorChart from "./DodgeArmorChart.jsx";
 
 export default function About({ dataBase }) {
@@ -21,7 +20,7 @@ export default function About({ dataBase }) {
       </div>
 
       <p>
-        Weapon icons from the{" "}
+        Icons from the{" "}
         <a href="https://mojimoon.github.io/brotato/" target="_blank" rel="noopener noreferrer">
           Brotato Codex
         </a>
@@ -41,9 +40,6 @@ export default function About({ dataBase }) {
         </a>
         .
       </p>
-
-      <h3 className="chart-title">DPS: All Weapons</h3>
-      <AllWeaponsChart dataBase={dataBase} />
 
       <h3 className="chart-title">Dodge vs Armor Value</h3>
       <DodgeArmorChart dataBase={dataBase} />

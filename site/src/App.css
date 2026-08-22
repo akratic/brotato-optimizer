@@ -10,6 +10,14 @@
   --series-1: #2a78d6;
   --series-2: #706e66;
   --series-3: #706e66;
+  --compare-1: #2a78d6;
+  --compare-2: #d6822a;
+  --compare-3: #2aa863;
+  --compare-4: #8a4fd6;
+  --compare-5: #d64f6b;
+  --compare-6: #2ab6b6;
+  --compare-7: #c9a227;
+  --compare-8: #c247a8;
   --border: rgba(11, 11, 11, 0.1);
 }
 
@@ -26,6 +34,14 @@
     --series-1: #3987e5;
     --series-2: #9c9a8d;
     --series-3: #9c9a8d;
+    --compare-1: #3987e5;
+    --compare-2: #e5943f;
+    --compare-3: #3fbf7c;
+    --compare-4: #a06be5;
+    --compare-5: #e5667f;
+    --compare-6: #3fd0d0;
+    --compare-7: #e0b93f;
+    --compare-8: #d95fc0;
     --border: rgba(255, 255, 255, 0.1);
   }
 }
@@ -42,6 +58,14 @@
   --series-1: #3987e5;
   --series-2: #9c9a8d;
   --series-3: #9c9a8d;
+  --compare-1: #3987e5;
+  --compare-2: #e5943f;
+  --compare-3: #3fbf7c;
+  --compare-4: #a06be5;
+  --compare-5: #e5667f;
+  --compare-6: #3fd0d0;
+  --compare-7: #e0b93f;
+  --compare-8: #d95fc0;
   --border: rgba(255, 255, 255, 0.1);
 }
 
@@ -316,24 +340,36 @@ table.split-table th {
   stroke-linejoin: round;
 }
 
-.all-chart-line {
-  stroke: var(--baseline);
-  stroke-opacity: 0.5;
-  stroke-width: 1;
+.compare-series-0 { color: var(--compare-1); }
+.compare-series-1 { color: var(--compare-2); }
+.compare-series-2 { color: var(--compare-3); }
+.compare-series-3 { color: var(--compare-4); }
+.compare-series-4 { color: var(--compare-5); }
+.compare-series-5 { color: var(--compare-6); }
+.compare-series-6 { color: var(--compare-7); }
+.compare-series-7 { color: var(--compare-8); }
+
+.compare-line {
+  stroke: currentColor;
+  stroke-opacity: 0.55;
+  stroke-width: 1.5;
   stroke-linecap: round;
   stroke-linejoin: round;
   pointer-events: none;
 }
 
-.all-chart-line-active {
-  stroke: var(--series-1);
+.compare-line.active {
+  stroke-opacity: 1;
+  stroke-width: 2.5;
+}
+
+.compare-marker {
+  fill: currentColor;
+  stroke: var(--surface-1);
   stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  pointer-events: none;
 }
 
-.all-weapons-chart {
+.compare-chart {
   margin-top: 20px;
 }
 
@@ -344,7 +380,7 @@ table.split-table th {
   color: var(--text-primary);
 }
 
-.all-weapons-chart svg {
+.compare-chart svg {
   cursor: crosshair;
 }
 
@@ -405,6 +441,15 @@ table.split-table th {
   color: var(--series-3);
 }
 
+.chart-tooltip-value.compare-series-0 { color: var(--compare-1); }
+.chart-tooltip-value.compare-series-1 { color: var(--compare-2); }
+.chart-tooltip-value.compare-series-2 { color: var(--compare-3); }
+.chart-tooltip-value.compare-series-3 { color: var(--compare-4); }
+.chart-tooltip-value.compare-series-4 { color: var(--compare-5); }
+.chart-tooltip-value.compare-series-5 { color: var(--compare-6); }
+.chart-tooltip-value.compare-series-6 { color: var(--compare-7); }
+.chart-tooltip-value.compare-series-7 { color: var(--compare-8); }
+
 .chart-legend {
   display: flex;
   flex-wrap: wrap;
@@ -439,6 +484,10 @@ table.split-table th {
 .chart-legend-swatch.series-2 {
   border-bottom-color: var(--series-3);
   border-bottom-style: dashed;
+}
+
+.chart-legend-swatch.compare-swatch {
+  border-bottom-color: currentColor;
 }
 
 .chart-tooltip {
@@ -528,4 +577,91 @@ table.curve-table tbody tr:nth-child(even) {
 
 table.curve-table tr.curve-row-active {
   background: color-mix(in srgb, var(--series-1) 15%, transparent);
+}
+
+.weapon-multiselect {
+  margin: 16px 0;
+}
+
+.weapon-multiselect-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.weapon-multiselect-empty {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.weapon-multiselect-chip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--surface-1);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 6px 4px 10px;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
+.weapon-multiselect-chip button {
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+  padding: 2px 5px;
+  border-radius: 50%;
+}
+
+.weapon-multiselect-chip button:hover {
+  color: var(--text-primary);
+  background: var(--gridline);
+}
+
+.weapon-multiselect-filter {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.weapon-multiselect-list {
+  max-height: 120px;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.weapon-multiselect-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.weapon-multiselect-option:hover {
+  background: var(--gridline);
+}
+
+.weapon-multiselect-option.disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+.weapon-multiselect-option input[type="checkbox"] {
+  accent-color: var(--series-1);
 }

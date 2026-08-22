@@ -3,6 +3,7 @@ import WeaponStats from "./components/WeaponStats.jsx";
 import DpsChart from "./components/DpsChart.jsx";
 import CurveTable from "./components/CurveTable.jsx";
 import EhpOptimizer from "./components/EhpOptimizer.jsx";
+import Compare from "./components/Compare.jsx";
 import About from "./components/About.jsx";
 import { WEAPON_STAT_LABELS, formatWeaponTotal } from "./statLabels.js";
 import { usePersistentState } from "./usePersistentState.js";
@@ -74,6 +75,14 @@ export default function App() {
           </button>
           <button
             role="tab"
+            aria-selected={tab === "compare"}
+            className={tab === "compare" ? "active" : ""}
+            onClick={() => setTab("compare")}
+          >
+            Compare
+          </button>
+          <button
+            role="tab"
             aria-selected={tab === "about"}
             className={tab === "about" ? "active" : ""}
             onClick={() => setTab("about")}
@@ -114,6 +123,8 @@ export default function App() {
       )}
 
       {tab === "ehp" && <EhpOptimizer dataBase={DATA_BASE} />}
+
+      {tab === "compare" && <Compare dataBase={DATA_BASE} />}
 
       {tab === "about" && <About dataBase={DATA_BASE} />}
     </div>

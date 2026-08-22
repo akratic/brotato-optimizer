@@ -35,6 +35,7 @@ sys.stdout.reconfigure(line_buffering=True)
 EXTRA_ICONS = {
     "icons/items/all/medikit/medikit_icon.png": "items/medikit_icon.png",
     "icons/items/all/focus/focus_icon.png": "items/focus_icon.png",
+    "icons/items/all/improved_tools/improved_tools_icon.png": "items/improved_tools_icon.png",
 }
 
 DISPLAY_FIELDS = [

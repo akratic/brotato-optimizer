@@ -5,6 +5,7 @@ const HEIGHT = 320;
 const PAD = { top: 16, right: 16, bottom: 28, left: 48 };
 
 const NICE_STEPS = [1, 1.5, 2, 3, 4, 5, 6, 8, 10];
+const PALETTE_SIZE = 8;
 
 function niceMax(value) {
   if (value <= 0) return 1;
@@ -14,7 +15,7 @@ function niceMax(value) {
   return step * magnitude;
 }
 
-export default function AllWeaponsChart({ dataBase }) {
+export default function CompareChart({ dataBase, selectedIds, pinnedN }) {
   const [weapons, setWeapons] = useState(null);
   const [hover, setHover] = useState(null); // { id, idx } | null
 
@@ -24,32 +25,42 @@ export default function AllWeaponsChart({ dataBase }) {
       .then(setWeapons);
   }, [dataBase]);
 
+  const selected = useMemo(() => {
+    if (!weapons) return [];
+    const byId = Object.fromEntries(weapons.map((w) => [w.id, w]));
+    return selectedIds.map((id) => byId[id]).filter(Boolean);
+  }, [weapons, selectedIds]);
+
   const innerW = WIDTH - PAD.left - PAD.right;
   const innerH = HEIGHT - PAD.top - PAD.bottom;
 
-  const maxN = useMemo(() => (weapons ? Math.max(...weapons.map((w) => w.dps.length - 1)) : 100), [weapons]);
+  const maxN = useMemo(
+    () => (selected.length ? Math.max(...selected.map((w) => w.dps.length - 1)) : 100),
+    [selected],
+  );
   const maxY = useMemo(
-    () => (weapons ? niceMax(Math.max(...weapons.map((w) => Math.max(...w.dps)))) : 100),
-    [weapons],
+    () => (selected.length ? niceMax(Math.max(...selected.map((w) => Math.max(...w.dps)))) : 100),
+    [selected],
   );
 
   const xScale = (n) => PAD.left + (n / maxN) * innerW;
   const yScale = (v) => PAD.top + innerH - (v / maxY) * innerH;
 
   const paths = useMemo(() => {
-    if (!weapons) return [];
-    return weapons.map((w) => ({
+    return selected.map((w, i) => ({
       id: w.id,
       name: w.name,
-      d: w.dps.map((v, i) => `${i === 0 ? "M" : "L"}${xScale(i).toFixed(2)},${yScale(v).toFixed(2)}`).join(" "),
+      colorIndex: i % PALETTE_SIZE,
+      d: w.dps.map((v, idx) => `${idx === 0 ? "M" : "L"}${xScale(idx).toFixed(2)},${yScale(v).toFixed(2)}`).join(" "),
     }));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [weapons, maxN, maxY]);
+  }, [selected, maxN, maxY]);
 
   const yTicks = [0, 0.25, 0.5, 0.75, 1].map((f) => f * maxY);
+  const pinnedIdx = Math.max(0, Math.min(maxN, pinnedN));
 
   function handlePointerMove(e) {
-    if (!weapons) return;
+    if (!selected.length) return;
     const svg = e.currentTarget;
     const rect = svg.getBoundingClientRect();
     const px = ((e.clientX - rect.left) / rect.width) * WIDTH;
@@ -59,7 +70,7 @@ export default function AllWeaponsChart({ dataBase }) {
 
     let bestId = null;
     let bestDist = Infinity;
-    for (const w of weapons) {
+    for (const w of selected) {
       const i = Math.min(clampedIdx, w.dps.length - 1);
       const y = yScale(w.dps[i]);
       const dist = Math.abs(y - py);
@@ -72,18 +83,20 @@ export default function AllWeaponsChart({ dataBase }) {
   }
 
   if (!weapons) return <p className="loading">Loading weapon comparison...</p>;
+  if (!selected.length) return <p className="loading">Select at least one weapon to compare.</p>;
 
-  const hoveredWeapon = hover && weapons.find((w) => w.id === hover.id);
+  const hoveredWeapon = hover && selected.find((w) => w.id === hover.id);
   const hoveredValue = hoveredWeapon ? hoveredWeapon.dps[Math.min(hover.idx, hoveredWeapon.dps.length - 1)] : null;
   const hoveredPath = hover && paths.find((p) => p.id === hover.id);
   const hoveredPoint = hoveredWeapon && [xScale(hover.idx), yScale(hoveredValue)];
+  const pinnedX = xScale(pinnedIdx);
 
   return (
-    <div className="viz-root all-weapons-chart">
+    <div className="viz-root compare-chart">
       <svg
         viewBox={`0 0 ${WIDTH} ${HEIGHT}`}
         role="img"
-        aria-label="DPS versus N for every weapon"
+        aria-label="DPS versus N for the selected weapons"
         onPointerMove={handlePointerMove}
         onPointerLeave={() => setHover(null)}
       >
@@ -116,21 +129,24 @@ export default function AllWeaponsChart({ dataBase }) {
           N={maxN}
         </text>
 
-        {paths.map((p) => (p.id === hover?.id ? null : <path key={p.id} d={p.d} className="all-chart-line" fill="none" />))}
+        <line x1={pinnedX} x2={pinnedX} y1={PAD.top} y2={PAD.top + innerH} className="chart-crosshair" />
 
-        {hoveredPath && <path d={hoveredPath.d} className="all-chart-line-active" fill="none" />}
+        {paths.map((p) => (
+          <path
+            key={p.id}
+            d={p.d}
+            className={`compare-line compare-series-${p.colorIndex}${p.id === hover?.id ? " active" : ""}`}
+            fill="none"
+          />
+        ))}
 
         {hoveredPoint && (
-          <>
-            <line
-              x1={hoveredPoint[0]}
-              x2={hoveredPoint[0]}
-              y1={PAD.top}
-              y2={PAD.top + innerH}
-              className="chart-crosshair"
-            />
-            <circle cx={hoveredPoint[0]} cy={hoveredPoint[1]} r={5} className="chart-marker" />
-          </>
+          <circle
+            cx={hoveredPoint[0]}
+            cy={hoveredPoint[1]}
+            r={5}
+            className={`compare-marker compare-series-${hoveredPath.colorIndex}`}
+          />
         )}
       </svg>
 
@@ -144,12 +160,21 @@ export default function AllWeaponsChart({ dataBase }) {
               hoveredPoint[0] / WIDTH > 0.85 ? "-100%" : hoveredPoint[0] / WIDTH < 0.15 ? "0%" : "-50%",
           }}
         >
-          <div className="chart-tooltip-value">{hoveredWeapon.name}</div>
+          <div className={`chart-tooltip-value compare-series-${hoveredPath.colorIndex}`}>{hoveredWeapon.name}</div>
           <div className="chart-tooltip-label">
             {hoveredValue.toFixed(hoveredValue < 10 ? 2 : 1)} DPS &middot; N = {hover.idx}
           </div>
         </div>
       )}
+
+      <div className="chart-legend">
+        {[...paths].sort((a, b) => a.name.localeCompare(b.name)).map((p) => (
+          <div key={p.id} className="chart-legend-item">
+            <span className={`chart-legend-swatch compare-swatch compare-series-${p.colorIndex}`} />
+            {p.name}
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
